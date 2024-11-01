@@ -1,0 +1,51 @@
+.pokemon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100px; /* Ajusta el valor según tus necesidades */
+  max-height: 100px; /* Ajusta el valor según tus necesidades */
+}
+
+.buttons-container {
+  display: flex;
+  gap: 20px; /* Espacio entre botones */
+  margin-top: 20px; /* Espacio entre la imagen y los botones */
+}
+
+/* Estilos para los botones */
+.buttons-container button {
+  background-color: #007bff; /* Azul */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave */
+  font-weight: bold; 
+}
+
+.buttons-container button:hover {
+  background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Estilos específicos para cada botón */
+.buttons-container button:first-child { 
+  background-color: #d9534f; /* Rojo para "Anterior" */
+}
+
+.buttons-container button:first-child:hover {
+  background-color: #c9302a; /* Rojo más oscuro al pasar el mouse */
+}
+
+.buttons-container button:last-child {
+  background-color: #5cb85c; /* Verde para "Siguiente" */
+}
+
+.buttons-container button:last-child:hover {
+  background-color: #4cae4c; /* Verde más oscuro al pasar el mouse */
+}
+
+img {
+  max-width: 100px; /* Ajusta el valor según tus necesidades */
+  max-height: 100px; /* Ajusta el valor según tus necesidades */
+}

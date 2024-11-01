@@ -1,0 +1,22 @@
+.health-container {
+    display: flex; /* Muestra los corazones en línea */
+    gap: 5px; /* Agrega un espacio entre los corazones */
+  }
+  .health-container span{
+    font-size:20px; /*tamaño de los corazones*/
+  }
+
+  div {
+    display: flex;
+    align-items: center; /* Para alinear verticalmente el texto y los emojis */
+    gap: 10px; /* Espacio entre el texto y los emojis */
+    font-family: 'Pokemon Solid', sans-serif; /* Fuente temática */
+    font-size: 16px;
+    flex-direction: row-reverse; /* Invierte el orden */
+    margin-bottom: 10px; /* Espacio entre las líneas de estadísticas */
+  }
+  
+  div span {
+    font-size: 24px; /* Tamaño más grande para los emojis */
+    font-family: 'Pokemon Solid', sans-serif; /* Fuente temática */
+  }

@@ -1,0 +1,30 @@
+
+<section class="pokedex-view">  
+    <span class="white-circle">
+        <span class="blue-circle"></span>
+    </span>
+    <div class="container pokemon">
+        <div class="search-bar">
+            <input type="number" placeholder="Ingresa el número del Pokémon" [(ngModel)]="pokemonActual">
+            <button (click)="buscarPokemon()">Buscar</button>
+        </div>
+        <app-pokemon [solicitarImagen]="PokemonImagen"
+        [solicitarImagen]="PokemonImagen" 
+        (clickPokemon)="handlePokemon($event)"></app-pokemon>
+        
+    </div>
+    <div class="container grafico">
+        <div class="stats-container">
+        <app-grafico [vida]="5" [resistencia]="5" [ataque]="5" [defensa]="5"></app-grafico>
+        </div>
+        <div class="buttons-container">
+            <button class="random-pokemon-button" (click)="getRandomPokemon()">
+              <img src="https://cdn-icons-png.flaticon.com/128/743/743977.png" alt="Random Pokemon" class="pokemon-icon"> Random
+            </button>
+            <button class="shiny-button" (click)="toggleShiny()">
+              <img src="https://cdn-icons-png.flaticon.com/128/17307/17307740.png" alt="Shiny" class="shiny-icon"> Shiny
+            </button>
+          </div>
+    </div>
+    <!--Crear boton para que el boton avance de pokemon-->
+</section>

@@ -1,0 +1,212 @@
+.pokedex-view{
+    height:100vh;
+    width:365px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:#861d1d;
+    padding:20px;
+    overflow:hidden;
+    gap:20px;
+}
+
+.container{
+    position:relative;
+    height:90%;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    background-color:antiquewhite;
+      
+}
+
+.pokemon{
+    border-top-left-radius:50px;
+}
+.grafico{
+    border-bottom-right-radius:50px;  
+}
+
+.square{
+    position:absolute;
+    height:20px;
+    width:30px;
+    background-color: antiquewhite;
+    bottom:10px;
+    right:10px;
+
+}
+
+header{
+    height:36px;
+    width:100%;
+    border: 1px solid black;
+    top:0;
+
+}
+.white-circle{
+    position:absolute;
+    top:12px;
+    left:12px;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.blue-circle{
+    width:25px;
+    height:25px;
+    border-radius:50%;
+    background-color:#1b4f8f;
+    animation:1s infinite glow-blue cubic-bezier(0.075,0.02,0.165,1);
+}
+
+.container.pokemon {
+    position: relative; /* Para posicionar el search-bar */
+  }
+  
+  .search-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px; /* Espacio entre input y botón */
+    border-radius: 5px;
+    height: 35px; /* Ajusta el valor según tus preferencias */
+    width: 180px; /* Ajusta el valor según tus preferencias */
+    
+  }
+  
+  .search-bar input {
+    width: 100px;
+    background-color: #AB9776;
+    color:white;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: "Pokemon Solid";
+    
+  }
+
+  .search-bar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    gap: 10px; /* Espacio entre input y botón */
+    background-color: #EBBA67; /* Color de fondo */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    border: 1px solid black;
+    color: #333;
+  }
+  
+  .search-bar input {
+    width: 100px;
+    border: 1px solid black; /* Borde del input */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+  }
+  
+  .search-bar button {
+    background-color: #007bff; /* Color de fondo del botón */
+    border: 1px solid black;
+    color: white;
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px 10px; /* Espaciado interno */
+    cursor: pointer; /* Cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave */
+    font-family: "Pokemon Solid";
+  }
+  
+  .search-bar button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+  }
+
+  .random-pokemon-button {
+    background-color: #87CEEB;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-family: "Pokemon Solid";
+    color: #333; /* Gris oscuro */
+    transition: all 0.2s ease; /* Animación suave */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .random-pokemon-button:hover {
+    background-color: #ff9900; /* Amarillo más oscuro */
+    box-shadow: 0 0 10px #ffcc00; /* Brillo */
+  }
+  
+  .shiny-button {
+    background-color: #EBAC67; 
+    border: 2px solid black; /* Borde negro */
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-family: "Pokemon Solid";
+    color: #333; /* Gris oscuro */
+    transition: all 0.2s ease; /* Animación suave */
+    letter-spacing: 1px; /* Espacio entre letras */
+    text-transform: uppercase; /* Mayúsculas */
+  }
+  
+  .shiny-button:hover {
+    background-color: #ffff00; /* Dorado más brillante */
+    box-shadow: 0 0 10px #ffd700; /* Destellos */
+  }
+
+  .buttons-container {
+    display: flex;
+    gap: 10px; /* Espacio entre botones */
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+  
+  .pokemon-icon,
+  .shiny-icon {
+    width: 20px; /* Ajusta el ancho según tus necesidades */
+    height: 20px; /* Ajusta la altura según tus necesidades */
+    margin-right: 5px;
+  }
+
+  .random-pokemon-button,
+  .shiny-button {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra horizontalmente también */
+    color: black;
+  }
+
+  .stats-container {
+    display: flex; /* Para distribuir las estadísticas horizontalmente */
+    flex-wrap: wrap; /* Para que se ajusten en varias líneas si es necesario */
+    justify-content: center; /* Para centrar las estadísticas horizontalmente */
+    gap: 20px; /* Espacio entre las estadísticas */
+    padding: 20px; /* Espacio interno del contenedor */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #f0f0f0; /* Color de fondo suave */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin: 20px;
+    width: 80%;
+  }
+  
+  .stats-container > div { /* Estilos para cada grupo de estadísticas (vida, resistencia, etc.) */
+    display: flex;
+    align-items: center; /* Para alinear verticalmente el texto y los emojis */
+    gap: 10px; /* Espacio entre el texto y los emojis */
+    font-family: 'Pokemon Solid', sans-serif; /* Fuente temática */
+    font-size: 16px;
+  }
+  
+  .stats-container > div span { /* Estilos para los emojis */
+    font-size: 24px; /* Tamaño más grande para los emojis */
+    font-family: 'Pokemon Solid', sans-serif; /* Fuente temática */
+  }
